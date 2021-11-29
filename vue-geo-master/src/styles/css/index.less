@@ -1,0 +1,177 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.chart {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.xhable {
+  width: 28px;
+  padding: 5px;
+  text-align: center;
+  background-color: #147482;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.xvable {
+  height: 24px;
+  padding: 0px 5px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #147482;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 auto;
+}
+body {
+  font-family: "Microsoft Yahei";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.xLabel {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  .number {
+    background: url(../images/sjbg.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+  .name {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
+
+.chart-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+//垂直flex样式
+.columnFlex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+//弹出层样式
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1920px;
+  height: 1080px;
+  .content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 5px;
+    padding: 20px 20px 10px 20px;
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+//二级页面基本样式
+.sec-main {
+  float: left;
+  width: 100%;
+  height: 100%;
+  .sec-content {
+    float: left;
+    width: 100%;
+    height: calc(~"100% - 40px");
+    padding-top: 10px;
+    .sec-colspan {
+      float: left;
+      height: 100%;
+      width: 23%;
+    }
+    .sec-colspan2 {
+      float: left;
+      height: 100%;
+      width: 46%;
+    }
+    .sec-colspan3 {
+      float: left;
+      height: 100%;
+      width: calc(~"77% - 10px");
+      margin-left: 10px;
+    }
+    .sec-map-box {
+      float: left;
+      height: 100%;
+      width: 54%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .sec-map {
+      padding: 10px;
+    }
+    #secmap {
+      width: 100%;
+      height: 100%
+    }
+  }
+}
+
+.jjbox {
+  height: 110px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  .jjbox-title {
+    background: url("../images/box/bk1.png") no-repeat;
+    height: 110px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      -webkit-writing-mode: vertical-lr;
+      writing-mode: tb-rl;
+      writing-mode: vertical-lr;
+      height: 80px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &.right {
+    transform: rotateY(180deg);
+
+  }
+}
